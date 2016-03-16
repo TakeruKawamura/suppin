@@ -5,6 +5,9 @@ if ($GLOBALS['is_debug']) {
 	ini_set('display_errors', '1');
 }
 
+//メソッド
+$GLOBALS['method'] = $_SERVER['REQUEST_METHOD'];
+
 //ヘッダ
 header('Content-type: text/plain; charset=UTF-8');
 
@@ -15,6 +18,7 @@ $function = $params[0];
 //リクエストパラメータデバッグ
 if ($GLOBALS['is_debug'])
 {
+	print "method={$GLOBALS['method']}\n";
 	print "########\n";
 	print "#params#\n";
 	print "########\n";

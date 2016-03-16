@@ -35,7 +35,7 @@ function test($params) {
 			//'where' => 'id > 3',
 			//'limit' => '2, 2'
 	));
-	print_r($rows);
+	//print_r($rows);
 	
 	return $rows;
 }
