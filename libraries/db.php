@@ -146,8 +146,12 @@ class DB {
 		return $this->connection->query($query);
 	}
 	
-	public function query() {
-		
+	/**
+	 * SQLのそのまま実行
+	 * @param string $query 実行SQL
+	 */
+	public function query($query) {
+		return $this->connection->query($query);
 	}
 	
 	private function show_query($query) {
